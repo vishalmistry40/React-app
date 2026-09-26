@@ -1,4 +1,21 @@
-.form{
-    text-align: center;
-    margin-top: 200px;
-}
+.page-shell { max-width: 1160px; min-height: 100vh; margin: 0 auto; padding: 90px 40px; display: grid; grid-template-columns: 1.08fr .92fr; gap: 86px; align-items: center; }
+.intro { padding-bottom: 20px; }
+.eyebrow { font-size: .78rem; font-weight: 800; letter-spacing: .17em; text-transform: uppercase; color: #535ac7; }
+h1 { font-size: clamp(3.2rem, 5.6vw, 5.7rem); line-height: 1.04; letter-spacing: -.065em; margin: 21px 0 24px; max-width: 630px; }
+.intro > p { color: #5e6c82; line-height: 1.7; max-width: 520px; font-size: 1.08rem; margin-bottom: 45px; }
+.feature { display: flex; gap: 17px; align-items: baseline; border-top: 1px solid #dce2f0; max-width: 510px; padding: 13px 0; }
+.feature span { color: #606ac8; font-weight: 800; font-size: .86rem; }
+.feature p { margin: 0; color: #53647b; font-size: .91rem; }
+.form-card { background: white; border: 1px solid #e2e7f3; border-radius: 24px; box-shadow: 0 24px 75px #27376813; padding: clamp(30px, 4vw, 50px); }
+.card-mark { display: grid; place-items: center; width: 46px; height: 46px; background: #494fbd; border-radius: 13px; color: white; font-weight: 800; font-size: 1.35rem; }
+h2 { font-size: 2rem; letter-spacing: -.04em; margin: 30px 0 4px; }
+.card-subtitle { color: #6c7990; margin: 0 0 32px; }
+form { display: grid; }
+label { font-size: .85rem; font-weight: 700; margin-bottom: 9px; }
+input { background: #f9faff; color: #162136; border: 1px solid #cbd3e3; border-radius: 10px; padding: 14px 15px; margin-bottom: 23px; width: 100%; }
+input:focus-visible, button:focus-visible { outline: 3px solid #9ba2ef; outline-offset: 2px; }
+button { border: 0; border-radius: 10px; padding: 15px; background: #494fbd; color: white; font-weight: 720; cursor: pointer; display: flex; justify-content: space-between; }
+button:hover { background: #363da9; }
+.notice { color: #193e67; background: #eaf5fd; padding: 14px; border-radius: 10px; line-height: 1.5; }
+.disclaimer { color: #7a8799; font-size: .8rem; margin: 24px 0 0; line-height: 1.5; }
+@media (max-width: 850px) { .page-shell { grid-template-columns: 1fr; padding: 55px 24px; gap: 35px; } .intro > p { margin-bottom: 28px; } .form-card { max-width: 550px; } }
